@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Служба по контракту в Вооружённых силах РФ — оставить заявку</title>
+<meta name="description" content="Расскажем об условиях, требованиях и порядке заключения контракта. Оставьте заявку — с вами свяжется специалист.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --olive:#2b372c; --olive-2:#3a4a3b; --stone:#ece9e1; --paper:#f8f7f3;
+  --brass:#b98d2f; --ink:#1b221c; --muted:#59655a; --line:#d4d0c4;
+  --r:10px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Onest',system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6;font-size:17px}
+svg{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--brass);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:'Roboto Condensed','Onest',sans-serif;font-weight:700;line-height:1.1;letter-spacing:.01em}
+h2{font-size:clamp(1.9rem,4vw,2.7rem);margin-bottom:14px}
+.lead{color:var(--muted);max-width:62ch}
+
+header{position:sticky;top:0;z-index:10;background:rgba(248,247,243,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-family:'Roboto Condensed',sans-serif;font-weight:700;font-size:1.15rem;text-decoration:none}
+nav{display:flex;gap:24px;align-items:center}
+nav a{text-decoration:none;font-weight:500;color:var(--muted)}
+nav a:hover{color:var(--ink)}
+nav a.cta{background:var(--olive);color:#fff;padding:8px 18px;border-radius:var(--r)}
+@media(max-width:600px){nav a:not(.cta){display:none}}
+
+.hero{color:#fff;background:
+  linear-gradient(90deg,rgba(18,28,20,.93) 0%,rgba(18,28,20,.78) 45%,rgba(18,28,20,.12) 100%),
+  url('img/hero.jpg') center 62%/cover no-repeat #14201a}
+.hero .wrap{display:block;min-height:640px;padding-top:110px;padding-bottom:80px}
+.hero h1{font-size:clamp(2.3rem,5.6vw,4rem);margin-bottom:22px;max-width:14em}
+.hero p{color:#c3cdc3;max-width:48ch;margin-bottom:34px;font-size:1.1rem}
+.btn{display:inline-block;background:var(--brass);color:#1b1608;font:inherit;font-weight:600;text-decoration:none;padding:15px 30px;border:0;border-radius:var(--r);cursor:pointer;transition:background .15s}
+.btn:hover{background:#cba43f}
+@media(max-width:820px){.hero{background:linear-gradient(180deg,rgba(18,28,20,.92) 0%,rgba(18,28,20,.6) 55%,rgba(18,28,20,.15) 100%),url('img/hero.jpg') 60% bottom/cover no-repeat #14201a}.hero .wrap{min-height:560px;padding-top:56px;padding-bottom:48px}}
+
+section{padding:88px 0}
+.reqs{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:36px}
+.req{padding:24px 26px;background:var(--stone);border-radius:var(--r);border-left:4px solid var(--brass)}
+.req h3{font-size:1.2rem;margin-bottom:6px}
+.req p{color:var(--muted);font-size:.98rem}
+@media(max-width:700px){.reqs{grid-template-columns:1fr}}
+
+.steps{list-style:none;margin-top:36px;display:grid;grid-template-columns:repeat(4,1fr);gap:20px;counter-reset:s}
+.steps li{counter-increment:s;border-top:3px solid var(--olive);padding-top:16px}
+.steps li::before{content:counter(s);font-family:'Roboto Condensed',sans-serif;font-weight:700;font-size:2rem;color:var(--brass)}
+.steps h3{font-size:1.15rem;margin:4px 0 6px}
+.steps p{color:var(--muted);font-size:.95rem}
+@media(max-width:860px){.steps{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.steps{grid-template-columns:1fr}}
+
+.contact{padding:0;background:url('img/photo1.jpg') 40% 25%/cover no-repeat #cfe0ee}
+.contact .wrap{display:grid;grid-template-columns:1fr 400px;gap:48px;align-items:end;min-height:780px;padding-top:80px;padding-bottom:64px}
+.contact .intro{align-self:start;max-width:460px;background:rgba(248,247,243,.94);padding:28px 32px;border-radius:var(--r);box-shadow:0 12px 40px rgba(20,32,26,.2)}
+.contact .intro h2{margin-bottom:10px}
+@media(max-width:860px){
+  .contact{background:linear-gradient(180deg,rgba(248,247,243,0) 0%,rgba(248,247,243,0) 55%,rgba(248,247,243,.95) 85%),url('img/photo1.jpg') center top/auto 440px no-repeat #f8f7f3}
+  .contact .wrap{grid-template-columns:1fr;gap:24px;min-height:0;padding-top:340px;padding-bottom:48px}
+}
+.note{margin-top:20px;font-size:.92rem;color:var(--muted);max-width:50ch}
+form{background:rgba(248,247,243,.96);padding:32px;border-radius:var(--r);border:1px solid var(--line);box-shadow:0 12px 40px rgba(20,32,26,.25)}
+label.f{display:block;font-weight:500;margin-bottom:6px}
+input[type=text],input[type=tel]{width:100%;padding:14px 16px;font:inherit;border:1.5px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);margin-bottom:20px}
+input[type=text]:focus,input[type=tel]:focus{outline:none;border-color:var(--olive)}
+input[aria-invalid=true]{border-color:#b3261e}
+.hp{position:absolute;left:-9999px;opacity:0}
+.check{display:flex;gap:10px;align-items:flex-start;font-size:.88rem;color:var(--muted);margin-bottom:20px}
+.check input{margin-top:5px;width:18px;height:18px;flex:none;accent-color:var(--olive)}
+.status{margin-top:16px;padding:12px 16px;border-radius:8px;font-weight:500;display:none}
+.status.ok{display:block;background:#dcefdc;color:#17421c}
+.status.err{display:block;background:#f8dedb;color:#7a1712}
+form .btn{width:100%}
+form .btn:disabled{opacity:.6;cursor:wait}
+
+footer{padding:32px 0;color:var(--muted);font-size:.92rem}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top">Служба по контракту</a>
+    <nav>
+      <a href="#requirements">Требования</a>
+      <a href="#steps">Порядок</a>
+      <a class="cta" href="#contact">Заявка</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <h1>Служба по контракту в Вооружённых силах РФ</h1>
+        <p>Оставьте имя и телефон — специалист свяжется с вами, расскажет об условиях, требованиях и порядке заключения контракта и ответит на вопросы.</p>
+        <a class="btn" href="#contact">Оставить заявку</a>
+      </div>
+    </div>
+  </div>
+
+  <section id="requirements">
+    <div class="wrap">
+      <h2>Кто может поступить на службу</h2>
+      <p class="lead">Точные критерии зависят от категории службы и устанавливаются законом. Специалист объяснит, что подходит именно вам.</p>
+      <div class="reqs">
+        <!-- Уточните формулировки по официальным источникам (mil.ru, военкомат) -->
+        <div class="req"><h3>Гражданство</h3><p>Служба по контракту открыта для граждан в соответствии с требованиями законодательства.</p></div>
+        <div class="req"><h3>Возраст</h3><p>Допустимый возраст определяется законом и зависит от категории военнослужащего.</p></div>
+        <div class="req"><h3>Здоровье</h3><p>Категория годности определяется военно-врачебной комиссией по результатам обследования.</p></div>
+        <div class="req"><h3>Документы</h3><p>Консультант подскажет, какие документы нужны, и поможет собрать пакет.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="steps" style="padding-top:0">
+    <div class="wrap">
+      <h2>Как это происходит</h2>
+      <p class="lead">Контракт вы подписываете только после того, как прочитали его условия.</p>
+      <ol class="steps">
+        <li><h3>Заявка</h3><p>Вы оставляете имя и номер телефона на этой странице.</p></li>
+        <li><h3>Консультация</h3><p>Специалист звонит, отвечает на вопросы и рассказывает об условиях службы.</p></li>
+        <li><h3>Проверка</h3><p>Медицинское обследование, профессиональный отбор и сбор документов.</p></li>
+        <li><h3>Контракт</h3><p>Вы изучаете текст контракта и принимаете решение самостоятельно.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <div class="intro">
+        <h2>Оставьте заявку</h2>
+        <p class="lead">Мы свяжемся с вами по телефону и ответим на вопросы. Заявка ни к чему вас не обязывает.</p>
+        <p class="note">Решение о заключении контракта принимаете вы. Условия, выплаты и льготы уточняйте у специалиста и в официальных документах.</p>
+      </div>
+
+      <form id="lead-form" novalidate>
+        <label class="f" for="name">ФИО</label>
+        <input type="text" id="name" name="name" autocomplete="name" placeholder="Иванов Иван Иванович" required>
+
+        <label class="f" for="phone">Номер телефона</label>
+        <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="+7 900 000-00-00" required>
+
+        <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+        <label class="check">
+          <input type="checkbox" id="consent" required>
+          <span>Я согласен(на) на обработку персональных данных (ФИО и телефон) для связи по моей заявке. <a href="privacy.html" target="_blank" rel="noopener">Политика обработки данных</a></span>
+        </label>
+
+        <button class="btn" type="submit" id="submit-btn">Отправить заявку</button>
+        <div class="status" id="status" role="status" aria-live="polite"></div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 [Название организации]</span>
+    <span>[Адрес / телефон пункта отбора]</span>
+  </div>
+</footer>
+
+<script>
+// ВСТАВЬТЕ адрес веб-приложения Google Apps Script
+const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzkNIRtTwskkkOqWgbqM4wi7ESjPZZih54z0syGICjVztYubYTF_qtFHpSP24Gg51Yi/exec';
+
+const form = document.getElementById('lead-form');
+const btn = document.getElementById('submit-btn');
+const status = document.getElementById('status');
+const show = (t, m) => { status.className = 'status ' + t; status.textContent = m; };
+
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const name = form.name.value.trim();
+  const phone = form.phone.value.trim();
+  const digits = phone.replace(/\D/g, '');
+  form.name.removeAttribute('aria-invalid');
+  form.phone.removeAttribute('aria-invalid');
+
+  if (name.length < 2) { form.name.setAttribute('aria-invalid','true'); form.name.focus(); return show('err','Укажите ФИО.'); }
+  if (digits.length < 10 || digits.length > 15) { form.phone.setAttribute('aria-invalid','true'); form.phone.focus(); return show('err','Проверьте номер: должно быть от 10 цифр.'); }
+  if (!document.getElementById('consent').checked) return show('err','Нужно согласие на обработку персональных данных.');
+
+  if (SCRIPT_URL.indexOf('https://') !== 0) return show('err','Форма ещё не подключена: вставьте адрес скрипта в SCRIPT_URL.');
+
+  btn.disabled = true; btn.textContent = 'Отправляем…';
+  try {
+    await fetch(SCRIPT_URL, { method:'POST', mode:'no-cors', body:new URLSearchParams({ name, phone, website:form.website.value }) });
+    form.reset();
+    show('ok','Заявка отправлена. Специалист свяжется с вами.');
+  } catch (err) {
+    show('err','Не удалось отправить заявку. Проверьте интернет и попробуйте ещё раз.');
+  } finally {
+    btn.disabled = false; btn.textContent = 'Отправить заявку';
+  }
+});
+</script>
+</body>
+</html>
